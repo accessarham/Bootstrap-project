@@ -1,0 +1,185 @@
+:root {
+    --main-color: #DE5E15;
+    --secondary-color: #e9ecef;
+    --white-color: #fff;
+}
+
+
+/* ======= Home page ======== */
+
+.index-bg {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vh;
+    overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--main-color);
+}
+
+.navbar-toggler-icon {
+    background-color: var(--main-color);
+}
+
+.offcanvas {
+    background-color: var(--secondary-color);
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-color: var(--main-color);
+}
+
+.btn:hover {
+    color: var(--white-color);
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-nav {
+        display: none;
+    }
+}
+
+/* Hero section */
+
+.links-list {
+    height: 100vh;
+    width: 50%;
+    background-color: var(--secondary-color);
+}
+
+.hero-img {
+    background-image: url('../img/hero-img.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}
+
+.hero-links {
+    color: #fff;
+}
+
+.hero-links:hover {
+    color: var(--main-color);
+}
+
+@media screen and (max-width: 980px) {
+    .hide-hero {
+        display: none;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .hide-nav {
+        display: none;
+    }
+}
+
+/* ====== Channels page ====== */
+
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 66px;
+}
+
+.link {
+    color: #000;
+}
+
+.links:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.trash {
+    display: none;
+}
+
+.links:hover .trash {
+    display: block;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+.links:hover .link {
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+/* Main content */
+.main {
+    margin-left: 300px;
+}
+
+.chat {
+    width: 100%;
+    height: 430px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 980px) {
+    .mobile-view {
+        margin-left: 0px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .channels-mobile-view {
+        display: none;
+    }
+
+    .chat-mobile-view {
+        display: none;
+
+    }
+}
+
+/* Keywords */
+
+.main-keywords {
+    margin-top: 66px;
+}
+
+.keyword-container {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #000;
+    overflow: auto;
+}
+
+/* Login page */
+.index-bg {
+    background-image: url('../img/bg.jpg');
+    background-size: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.login-box {
+    max-width: 350px;
+    height: auto;
+    border-radius: 5px;
+    margin: auto;
+}

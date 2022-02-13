@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keywords</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="" rel="icon" />
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+    />
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- ======= Header ======== -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-md">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/img/logo.png"
+              alt="logo"
+              height="40px"
+              width="50px"
+            />
+          </a>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="channels.html">Channels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="links.html">Links</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="keywords.html">Keywords</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="navbar-toggler-icon p-3 border-white border-0 rounded"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBackdrop"
+            aria-controls="offcanvasWithBackdrop"
+          ></button>
+        </div>
+      </nav>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+            <a href="index.html">
+              <img
+                src="assets/img/logo.png"
+                alt="logo"
+                height="40px"
+                width="50px"
+              />
+            </a>
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark"
+                aria-current="page"
+                href="channels.html"
+                >Channels</a
+              >
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="links.html">Links</a>
+            </li>
+            <hr />
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="keywords.html">Keywords</a>
+            </li>
+            <hr />
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="login.html">Login</a>
+            </li>
+            <hr />
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="sign-up.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- ====== End of Header ====== -->
+
+    <!-- ======= Main Content ========= -->
+
+    <div class="main-keywords">
+      <div class="container px-5 pt-4">
+        <h5>Add Keywords</h5>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Keywords..."
+            aria-describedby="button-addon2"
+            id="newKeyword"
+          />
+          <button class="btn" type="button" id="saveKeyword">Save</button>
+        </div>
+      </div>
+
+      <div class="container px-5 py-2">
+        <h5>All Keywords</h5>
+        <div class="keyword-container p-2">
+          <button
+            type="button"
+            class="btn btn-secondary p-1"
+            id="displayKeyword"
+          >
+            Notifications
+            <i
+              class="bi bi-trash3 text-white"
+              title="Delete"
+              id="deleteKeyword"
+            ></i>
+          </button>
+          <button type="button" class="btn btn-secondary p-1">
+            Notifications <i class="bi bi-trash3 text-white" title="Delete"></i>
+          </button>
+          <button type="button" class="btn btn-secondary p-1">
+            Notifications <i class="bi bi-trash3 text-white" title="Delete"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= End of Main Content ========= -->
+
+    <!-- Vendor JS File -->
+    <script src="assets/vendor/js/bootstrap.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
