@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap - Template</title>
+    <title>Login</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="" rel="icon" />
+    <link href="assets/img/logo.png" rel="icon" />
 
     <!-- Vendor CSS Files -->
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
@@ -21,32 +21,117 @@
     <!-- Template Main CSS File -->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body class="index-bg">
-    <div class="login-box px-5 py-5 bg-light mt-5">
-      <div class="text-center mb-5">
-        <a href="index.html"
-          ><img
+  <body>
+    <header
+      class="auth-header d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <div class="d-flex align-items-center">
+          <img
             src="assets/img/logo.png"
-            width="100px"
-            height="80px"
+            height="40px"
+            width="40px"
             alt="logo"
-        /></a>
+          />
+          <h4 class="px-2">Coinology</h4>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="mx-3">
+            <a
+              href="sign-up.html"
+              class="text-decoration-none text-white auth-sign-up"
+              >Sign Up</a
+            >
+          </div>
+          <div>|</div>
+          <div class="mx-3">
+            <a
+              href="login.html"
+              class="text-decoration-none text-white auth-login"
+              >Login</a
+            >
+          </div>
+        </div>
       </div>
-      <div class="mb-2">
-        <label for="username">Username or Email</label>
-        <input type="email" class="form-control" />
+    </header>
+
+    <div
+      class="container fixed-bottom login d-flex flex-column flex-md-row justify-content-between align-items-center"
+    >
+      <div
+        class="login-box d-flex flex-column justify-content-center align-items-center login"
+      >
+        <div>
+          <div class="d-md-none">
+            <img src="assets/img/bg.png" class="img-fluid" alt="bg" />
+          </div>
+          <br />
+          <h4>Login</h4>
+          <br />
+          <div class="mb-2">
+            <label for="username">Username or Email</label>
+            <input type="email" class="form-control" />
+          </div>
+          <div class="mb-2">
+            <label for="Password">Password</label>
+            <input type="password" class="form-control" />
+          </div>
+          <br />
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn">Login</button>
+            <a href="sign-up.php" class="text-decoration-none text-dark"
+              >New User?</a
+            >
+          </div>
+        </div>
       </div>
-      <div class="mb-2">
-        <label for="Password">Password</label>
-        <input type="password" class="form-control" />
-      </div>
-      <br />
-      <div class="d-flex justify-content-between align-items-center">
-        <button type="button" class="btn">Login</button>
-        <a href="sign-up.html" class="text-decoration-none text-dark"
-          >New User?</a
-        >
+
+      <div class="bg-img mt-3 d-none d-md-block">
+        <img src="assets/img/bg.png" width="100%" height="500px" alt="bg" />
       </div>
     </div>
+
+    <footer
+      class="auth-footer fixed-bottom d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <div
+          class="text-white d-flex justify-content-center align-items-center"
+        >
+          <div class="mx-2">Contact Us :</div>
+          <div class="mx-2">+92 123 1234567</div>
+        </div>
+
+        <div
+          class="text-white d-flex justify-content-center align-items-center"
+        >
+          <div>
+            <a
+              href="https://facebook.com"
+              class="text-decoration-none text-white mx-2"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </div>
+          <div>
+            <a
+              href="https://twitter.com"
+              class="text-decoration-none text-white mx-2"
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </div>
+          <div>
+            <a
+              href="https://instagram.com"
+              class="text-decoration-none text-white mx-2"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

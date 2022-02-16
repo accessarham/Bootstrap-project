@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Channels</title>
+    <title>Announcments</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="" rel="icon" />
+    <link href="assets/img/logo.png" rel="icon" />
 
     <!-- Vendor CSS Files -->
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
@@ -22,203 +22,109 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <!-- ======= Header ======== -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-md">
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="assets/img/logo.png"
-              alt="logo"
-              height="40px"
-              width="50px"
-            />
-          </a>
+    
+   <!-- ======= Header ======== -->
+   <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        <a href="coins.html"><img src="assets/img/logo.png" height="40px" width="40px" alt="logo"></a>
+        <a href="coins.html" class="text-white text-decoration-none"> <h4 class="px-2">Coinology</h4></a>
+      </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="coins.html">Coins</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="links.html">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="keywords.html">Keywords</a>
+          </li>
+        </ul>
+        <div>
 
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="channels.html">Channels</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="links.html">Links</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="keywords.html">Keywords</a>
-            </li>
-          </ul>
-            
-            <button
+          <button
               type="button"
-              class="navbar-toggler-icon p-3 border-white border-0 rounded"
+              class="navbar-toggler-icon p-3 border-white border-0 rounded mx-2"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasWithBackdrop"
               aria-controls="offcanvasWithBackdrop"
-            ></button>
-        </div>
-      </nav>
-
-      <div
-        class="offcanvas offcanvas-start"
-        tabindex="-1"
-        id="offcanvasWithBackdrop"
-        aria-labelledby="offcanvasWithBackdropLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
-            <a href="index.html">
-              <img
-                src="assets/img/logo.png"
-                alt="logo"
-                height="40px"
-                width="50px"
-              />
-            </a>
-          </h5>
-          <button
-            type="button"
-            class="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
           ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a
-                class="nav-link link"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <hr />
-            <li class="nav-item">
-              <a
-                class="nav-link link active"
-                aria-current="page"
-                href="channels.html"
-                >Channels</a
-              >
-            </li>
-            <hr />
-            <li class="nav-item">
-              <a class="nav-link link" href="links.html">Links</a>
-            </li>
-            <hr />
-            <li class="nav-item">
-              <a class="nav-link link" href="keywords.html">Keywords</a>
-            </li>
-            <hr>
-            <li class="nav-item active">
-              <a class="nav-link text-dark" href="login.html">Login</a>
-            </li>
-            <hr>
-            <li class="nav-item active">
-              <a class="nav-link text-dark" href="sign-up.html">Sign Up</a>
-            </li>
-          </ul>
-          </ul>
+          <a href="logout.html" class="text-light text-decoration-none mx-3">Logout</a>
+
         </div>
       </div>
-    </header>
-    <!-- ====== End of Header ====== -->
+    </nav>
 
-    <!-- ======== Sidebar ========= -->
-
-    <div class="sidebar bg-light p-4 overflow-auto pb-5 mobile-view">
-      <h4>Channels</h4>
-      <hr />
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" id="channelName" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete" id="deleteChannel"></i>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasWithBackdrop"
+      aria-labelledby="offcanvasWithBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+        <div class="d-flex align-items-center">
+          <a href="coins.html"><img src="assets/img/logo.png" height="40px" width="40px" alt="logo"></a>
+          <a href="coins.html" class="text-dark text-decoration-none"> <h4 class="px-2">Coinology</h4></a>
+        </div>
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
       </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
-      </div>
-      <div class="links d-block p-3 rounded d-flex justify-content-between">
-        <a class="text-decoration-none link" href="#">Channel 1</a>
-        <i class="bi bi-trash3 trash" title="Delete"></i>
+      <div class="offcanvas-body">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark"
+              aria-current="page"
+              href="coins.html"
+              >Coins</a
+            >
+          </li>
+          <hr />
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="links.html">Links</a>
+          </li>
+          <hr />
+          <li class="nav-item active">
+            <a class="nav-link text-dark" href="keywords.html">Keywords</a>
+          </li>
+          <hr />
+          <li class="nav-item active">
+            <a class="nav-link text-dark" href="logout.html">Logout</a>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <!-- ======== End of Sidebar ========= -->
+  </header>
+  <!-- ====== End of Header ====== -->
 
     <!-- ======== Main content ======== -->
 
-    <div class="main mobile-view">
-      <div class="container px-2 py-4">
-        <h5 class="py-3" id="displayChannelHeading">Display Channel Name</h5>
-        <div
-          class="chat rounded bg-light border-light overflow-auto d-flex flex-column justify-content-end align-content-end"
-        >
-          <!-- <div class="input-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Type your message"
-              aria-describedby="button-addon2"
-            />
-            <button class="btn btn-primary" type="button" id="button-addon2">
-              <i class="bi bi-send"></i>
-            </button> -->
+    <div class="main-chat">
+      <div class="container px-2">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h5 class="py-1" id="displayChannelHeading">Display coins name</h5>
+            <p>Announcments</p>
+          </div>
+          <div>
+            <input type="date" class="form-control" name="" id="">
+          </div>
+        </div>
+          <div
+            class="chat rounded bg-light border-dark overflow-auto"
+          >
+            <div class="m-2">
+              <div class="fw-bold m-2">name</div>
+              <div class="m-2 description p-2 rounded">Description</div>
+            </div>  
           </div>
         </div>
       </div>

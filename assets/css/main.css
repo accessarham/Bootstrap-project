@@ -4,17 +4,45 @@
     --white-color: #fff;
 }
 
+/* auth-header */
+.auth-header {
+    height: 60px;
+    width: 100%;
+    background-color: var(--main-color);
+    z-index: 2000;
+}
 
-/* ======= Home page ======== */
+.auth-header > div {
+    color: #fff;
+}
 
-.index-bg {
-    background-image: url('../img/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vh;
-    overflow: hidden;
+.auth-sign-up:hover,
+.auth-login:hover {
+    font-weight: bold;
+}
+
+/* auth-footer */
+.auth-footer {
+    height: 40px;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+/* login page and sign up page */
+.login {
+    height: 100%;
+    z-index: -1;
+}
+
+.login-box {
+    width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .login-box {
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 /* Navbar */
@@ -46,57 +74,27 @@
     }
 }
 
-/* Hero section */
-
-.links-list {
-    height: 100vh;
-    width: 50%;
-    background-color: var(--secondary-color);
-}
-
-.hero-img {
-    background-image: url('../img/hero-img.jpeg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-    height: 100vh;
-}
-
-.hero-links {
-    color: #fff;
-}
-
-.hero-links:hover {
-    color: var(--main-color);
-}
-
-@media screen and (max-width: 980px) {
-    .hide-hero {
-        display: none;
-    }
-
-    .hero-img {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 980px) {
-    .hide-nav {
-        display: none;
-    }
-}
-
 /* ====== Channels page ====== */
-
-/* Sidebar */
-.sidebar {
-    width: 300px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+/* Channels */
+.main-keywords {
     margin-top: 66px;
+}
+
+.keyword-container {
+    width: 100%;
+    height: 350px;
+    border: 1px solid #000;
+    overflow: auto;
+}
+
+
+/* ====== Links page ====== */
+/* Sidebar */
+.links-sidebar {
+    width: 280px;
+    height: 100%;
+    margin-top: 55px;
+    position: fixed;
 }
 
 .link {
@@ -125,7 +123,11 @@
 
 /* Main content */
 .main {
-    margin-left: 300px;
+    margin-left: 280px;
+}
+
+.main-links {
+    padding-top: 80px;
 }
 
 .chat {
@@ -134,12 +136,18 @@
     border: 1px solid black;
 }
 
+.description {
+    background-color: #e9ecef;
+    max-width: 500px;
+    height: auto;
+}
+
 @media screen and (max-width: 980px) {
     .mobile-view {
         margin-left: 0px;
     }
 
-    .sidebar {
+    .links-sidebar {
         display: none;
     }
 
@@ -153,8 +161,12 @@
     }
 }
 
-/* Keywords */
+/* Chats page */
+.main-chat {
+    margin-top: 70px;
+}
 
+/* Keywords */
 .main-keywords {
     margin-top: 66px;
 }
@@ -166,20 +178,29 @@
     overflow: auto;
 }
 
-/* Login page */
-.index-bg {
-    background-image: url('../img/bg.jpg');
-    background-size: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
 
-.login-box {
-    max-width: 350px;
-    height: auto;
-    border-radius: 5px;
-    margin: auto;
-}
+/* scroll bar customization */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}  
+
+
+
+
+
